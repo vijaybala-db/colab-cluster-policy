@@ -1,2 +1,4 @@
 .env
 venv/
+service-account-partner-colab.json
+google_secret.json
