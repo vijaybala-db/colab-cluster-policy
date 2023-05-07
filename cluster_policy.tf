@@ -41,6 +41,7 @@ resource "databricks_cluster_policy" "colab_single_node_small" {
   definition = jsonencode(local.default_policy)
 }
 
+
 resource "databricks_permissions" "can_use_cluster_policyinstance_profile" {
   cluster_policy_id = databricks_cluster_policy.colab_single_node_small.id
   access_control {
